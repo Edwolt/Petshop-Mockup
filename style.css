@@ -51,7 +51,6 @@ a{
     color: inherit;
     text-decoration: none;
 }
-
 a:visited{
     color: inherit;
     text-decoration: none;
@@ -81,7 +80,6 @@ a:visited{
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 #login:hover{
     background-color: rgba(255,255,255,0.3);
 }
