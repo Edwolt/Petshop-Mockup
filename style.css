@@ -96,6 +96,17 @@ a:visited{
     padding-left: 25px;
 }
 
+.pop{
+    position: absolute;
+    left: 2%;
+    padding: 3px 7px;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    transform: translate(30%, -70%);
+}
+
 @media (max-width: 500px){
     .content{
         padding-left: 0;
