@@ -2,11 +2,9 @@
     --headercolor: rgb(247, 247, 247);
     --maincolor: rgb(0, 39, 212);
     --secondarycolor: rgb(62, 91, 223);
-    --transparentsecond: rgba(62, 91, 223, 0.7);
+    --cardcolor: rgb(230, 230, 230);
     --screen: linear-gradient(rgba(113, 103, 202, 0.3), rgba(113, 103, 202, 0.3));
-    --terciarycolor: rgb(113, 103, 202);
     --gradient: linear-gradient(rgb(0, 39, 212), rgb(62, 91, 223));
-    --contrastcolor: rgb(169, 50, 238);
     
     margin: 0;
     padding: 0;
@@ -14,9 +12,7 @@
 }
 
 body{
-    background-image: var(--screen), url('./resources/dog.jpg');
-    background-position: center;
-    background-size: cover;
+    
     overflow-x: hidden;
 }
 
@@ -24,27 +20,27 @@ body{
     height: 100%;
     width: 100%;
     padding: 20px;
-    /* background-image: var(--screen), url('./resources/dog.jpg');
-    background-position: center;
-    background-size: cover; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card{
-    background: var(--transparentsecond);
+    background: var(--cardcolor);
     max-width: 80vw;
-    align-items: center;
-    color: var(--headercolor);
-    border: solid 3px white;
-    border-radius: 15px;
+    text-align: center;
     padding: 25px;
     font-size: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .card h1{
     margin: 10px 0px 15px 0px;
+    color: rgb(37, 0, 248);
+}
+
+.card img{
+    height: 300px;
 }
 
 a{
@@ -63,20 +59,31 @@ a:visited{
 /* Header */
 #header{
     display: flex;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
-    background-image: var(--gradient);
-    padding: 15px;
+    background-color: var(--maincolor);
+    padding: none;
     color: var(--headercolor);
     font-weight: bolder;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    padding-left: 20px;
+}
+
+#header h1{
+    padding: 10px 0 10px 20px;
 }
 
 #login{
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    border: solid 2px var(--terciarycolor);
-    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -87,5 +94,14 @@ a:visited{
 #login img{
     height: 50px;
     padding-left: 25px;
-    clip-path: circle(37.54% at 65.93% 50%);
+}
+
+@media (max-width: 500px){
+    .content{
+        padding-left: 0;
+    }
+
+    .card img{
+        height: 200px;
+    }
 }

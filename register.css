@@ -13,6 +13,7 @@
 #login-form input:not([type=submit]){
     background-color: white;
     font-size: 16px;
+    max-width: 40%;
     border: none;
     border-radius: 3px;
     border-bottom: 5px solid purple;
@@ -20,7 +21,6 @@
 }
 #login-form input:not([type=submit]):focus{
     border-bottom: 5px solid greenyellow;
-    font-size: 20px;
 }
 
 #login-form input[type=file]{
@@ -46,14 +46,16 @@
     background: none;
     font-weight: bolder;
     font-size: 20px;
-    color: var(--headercolor);
-    border: 3px solid var(--contrastcolor);
+    color: var(--maincolor);
+    border: 3px solid var(--maincolor);
     border-radius: 10px;
     padding: 10px 20px;
+    cursor: pointer;
     transition: 0.2s;
 }
 #login-form input[type=submit]:hover{
-    background-color: var(--contrastcolor);
+    background-color: var(--maincolor);
+    color: var(--headercolor);
 }
 
 /* Style need the !important to appear */

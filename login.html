@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
 </head>
-
+<script src="https://kit.fontawesome.com/b3eff8b5da.js" crossorigin="anonymous"></script>
 <body>
     <header id="header">
-        <h1>Le Furry</h1>
+        <a href="./index.html" id="logo">
+            <h1>Le Furry</h1>
+            <img src="./resources/kennel.png" alt="kennel">
+        </a>
         <a href='/login.html'>
             <div id="login">
                 <h4>Login</h4>
@@ -24,11 +27,11 @@
             <h1>Login</h1>
             <form id="login-form">
                 <div class='inputwrap'>
-                    <!-- TODO FaUserAlt -->
+                    <i class="fas fa-user-alt"></i>
                     <input type='text' name='email' placeholder='example@example.com' autoFocus />
                 </div>
                 <div class='inputwrap'>
-                    <!-- TODO FaLock -->
+                    <i class="fas fa-lock"></i>
                     <input type='password' name='passwd' placeholder='password' />
                 </div>
                 <input type='submit' value='Log in' />
