@@ -9,9 +9,9 @@
 }
 
 .dropdown ul li{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     padding: 5px 20px;
     margin: 10px 0;
     background: var(--secondarycolor);
@@ -20,7 +20,11 @@
 .dropdown ul li:hover{
     filter: brightness(1.2);
 }
-
+.dropdown ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .pop{
     position: absolute;
     left: 80%;

@@ -6,6 +6,7 @@
     <title>Client page</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="./products.css">
 </head>
 <body>
     <header id="header">
@@ -21,29 +22,118 @@
             <div class="dropdown">
                 <ul>
                     <li>
-                        <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
-                        <h4>Profile</h4>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
+                            <h4>Profile</h4>
+                        </a>
                     </li>
                     <li>
-                        <img class="dropdownIcon" src="../resources/shopping.png" alt="shopping">
-                        <h4>Shop</h4>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/shopping.png" alt="shopping">
+                            <h4>Shop</h4>
+                        </a>
                     </li>
                     <li>
-                        <img class="dropdownIcon" src="../resources/gear.png" alt="gear">
-                        <h4>Users</h4>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/gear.png" alt="gear">
+                            <h4>Users</h4>
+                        </a>
                     </li>
                     <li>
-                        <img class="dropdownIcon" src="../resources/tools-and-utensils.png" alt="scissors">
-                        <h4>Services</h4>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/tools-and-utensils.png" alt="scissors">
+                            <h4>Services</h4>
+                        </a>
                     </li>
                     <li>
-                        <img class="dropdownIcon" src="../resources/bars.png" alt="bars">
-                        <h4>Finance</h4>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/bars.png" alt="bars">
+                            <h4>Finance</h4>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
+    <header id="secondHeader">
+        <h1>Loja</h1>
+        <a href="">Add product</a>
+    </header>
+    <div class="content">
+        <div class="card" id="search">
+            <h3>Search</h3>
+            <form>
+                <input type="text" name="searchPrompt" placeholder="Ex.: Dog food" />
+                <input type="submit" value="🔎" />
+            </form>
+        </div>
+        <div class="card products">
+            <div class="productCard">
+                <img src="../resources/dog-food.jpg" alt="dog-food">
+                <h3>Dog food</h3>
+                <h4>$20.99</h4>
+                <h5>Crunchie bites</h5>
+                <p>Box food for dogs</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/catfood.jpg" alt="cat-food">
+                <h3>Cat food</h3>
+                <h4>$20.99</h4>
+                <h5>Whiskas</h5>
+                <p>Snacks for cats</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/coleira.jpeg" alt="colar">
+                <h3>Colar</h3>
+                <h4>$5.99</h4>
+                <h5>Sheffield</h5>
+                <p>Collar with guide for walking</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/pratinhodecomida.jpg" alt="bowl">
+                <h3>Food Bowl</h3>
+                <h4>$2.99</h4>
+                <h5>Sheffield</h5>
+                <p>Food bowl of different colors</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/petbed.jpg" alt="pet-bed">
+                <h3>Pet bed</h3>
+                <h4>$9.99</h4>
+                <h5>Sheffield</h5>
+                <p>onfortable little bed for your pet to sleep in</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/aquario.jpeg" alt="aquarium">
+                <h3>Aquarium</h3>
+                <h4>$49.99</h4>
+                <h5>Le Fisherman</h5>
+                <p>Large 20L aquarium with filter</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/dogtoy.jpg" alt="dog-toy">
+                <h3>Dog Toy</h3>
+                <h4>$1.99</h4>
+                <h5>Sheffield</h5>
+                <p>Munching toy shapped like a bone</p>
+                <a>Edit</a>
+            </div>
+            <div class="productCard">
+                <img src="../resources/birdcage.jpg" alt="bird-cage">
+                <h3>Bird cage</h3>
+                <h4>$20.99</h4>
+                <h5>Birds of paradise</h5>
+                <p>Small cage for small birds</p>
+                <a>Edit</a>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
