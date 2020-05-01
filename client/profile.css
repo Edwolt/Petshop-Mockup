@@ -20,6 +20,14 @@
   padding: 5px;
 }
 
+/* Reducing the space between the label and the data */
+#profile-content .datawrap>h3 {
+    margin-right: 0px;
+}
+#profile-content .datawrap>p {
+    margin-left: 0px;
+}
+
 .datawrap {
   display: flex;
   align-items: center;
