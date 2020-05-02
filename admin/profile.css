@@ -1,0 +1,42 @@
+#profile-pic{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+#profile-pic img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#profile-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#profile-content *{
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Reducing the space between the label and the data */
+#profile-content .datawrap>h3{
+    margin-right: 0px;
+}
+#profile-content .datawrap>p{
+    margin-left: 0px;
+}
+
+.datawrap{
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  width: 100%;
+}
+
+#big-shield{
+  position: absolute;
+  height: 60px;
+  transform: translate(100%, 200%);
+}

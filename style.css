@@ -126,6 +126,7 @@ a:visited{
     color: var(--maincolor);
     padding: 10px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    margin-left: 15px;
 }
 #secondHeader a:hover{
     filter: brightness(1.2);
