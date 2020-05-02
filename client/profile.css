@@ -28,6 +28,20 @@
     margin-left: 0px;
 }
 
+#profile-content a{
+  background: var(--secondarycolor);
+  width: 100%;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#profile-content a:hover{
+  filter: brightness(1.2);
+}
+
 .datawrap{
   display: flex;
   align-items: center;

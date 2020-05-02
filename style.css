@@ -35,6 +35,10 @@ body{
     margin-bottom: 25px;
 }
 
+.lefty{
+    margin-left: 50px;
+}
+
 .card h1{
     margin: 10px 0px 15px 0px;
     color: rgb(37, 0, 248);
