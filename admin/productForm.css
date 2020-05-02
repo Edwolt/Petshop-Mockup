@@ -5,6 +5,13 @@
     grid-template-rows: auto;
     grid-gap: 10px;
     font-size: 18px;
+    justify-items: center;
+}
+
+input[readonly]{
+    background: none;
+    border: none;
+    font-size: 16px;
 }
 
 #productForm .col4{
@@ -31,7 +38,6 @@
     margin-left: 5%;
 }
 .inputWrap input[type=submit]{
-    width: 80%;
     font-size: 22px;
     font-weight: 500;
     background: none;
@@ -43,9 +49,7 @@
     background: var(--maincolor);
     color: white;
 }
-.center{
-    grid-column: 4/span 1;
-}
+
 
 @media (max-width: 750px){
     #productForm{

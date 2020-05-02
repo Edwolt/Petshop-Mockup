@@ -57,30 +57,30 @@
         </div>
     </header>
     <header id="secondHeader">
-        <h1>Add Product</h1>
+        <h1>Edit Product</h1>
     </header>
     <div class="content">
         <div class="card">
             <form id="productForm">
                 <div class="inputWrap col4">
                     <span>Product name:</span>
-                    <input type="text" name="name" placeholder="Ex.: Dog food"/>
+                    <input type="text" name="name" placeholder="Ex.: Dog food" value="Dog food"/>
                 </div>
                 <div class="inputWrap col3">
                     <span>Price: $</span>
-                    <input type="number" step="0.01" name="price" placeholder="20.99"/>
+                    <input type="number" step="0.01" name="price" placeholder="20.99" value="20.99"/>
                 </div>
                 <div class="inputWrap col7">
                     <span>Description:</span>
-                    <input type="text" name="description" placeholder="Describe your product"/>
+                    <input type="text" name="description" placeholder="Describe your product" value="Box food for dogs"/>
                 </div>
                 <div class="inputWrap col4">
                     <span>Tags:</span>
-                    <input type="text" name="tags" placeholder="[tag,tag,tag]"/>
+                    <input type="text" name="tags" placeholder="[tag,tag,tag]" value="dog,puppy,food,Crunchy Bites,meal"/>
                 </div>
                 <div class="inputWrap col3">
                     <span>In stock:</span>
-                    <input type="number" name="stock"/>
+                    <input type="number" name="stock" value="23"/>
                 </div>
                 <div class="inputWrap col4">
                     <span>Product photo:</span>
@@ -88,7 +88,11 @@
                 </div>
                 <div class="inputWrap col3">
                     <span>Brand:</span>
-                    <input type="text" name="brand" placeholder="Ex.: Pedigree"/>
+                    <input type="text" name="brand" placeholder="Ex.: Pedigree" value="Crunchy Bites" />
+                </div>
+                <div class="inputWrap col3">
+                    <span>Sold:</span>
+                    <input type="text" name="sold" value="12" readonly/>
                 </div>
                 <div class="inputWrap col7">
                     <input type="submit" value="Add"/>
