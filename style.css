@@ -132,6 +132,16 @@ a:visited{
     box-shadow: 1px 1px 8px rgba(0,0,0,0.7);
 }
 
+.lineWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineWrap .wrap{
+    padding: 50px;
+
+}
+
 @media (max-width: 500px){
     .content{
         padding-left: 0;

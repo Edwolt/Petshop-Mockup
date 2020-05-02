@@ -1,0 +1,57 @@
+#productForm{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    font-size: 18px;
+}
+
+#productForm .col4{
+    grid-column: auto / span 4;
+}
+#productForm .col3{
+    grid-column: auto / span 3;
+}
+#productForm .col7{
+    grid-column: auto / span 7;
+}
+
+.inputWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.inputWrap span{
+    white-space: nowrap;
+}
+.inputWrap input{
+    width: 100%;
+    margin-left: 5%;
+}
+.inputWrap input[type=submit]{
+    width: 80%;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    border: 3px solid var(--maincolor);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.inputWrap input[type=submit]:hover{
+    background: var(--maincolor);
+    color: white;
+}
+.center{
+    grid-column: 4/span 1;
+}
+
+@media (max-width: 750px){
+    #productForm{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

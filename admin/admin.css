@@ -35,3 +35,10 @@
     font-size: 12px;
     transform: translate(30%, -50%);
 }
+
+#shield{
+    position: absolute;
+    left: 100%;
+    transform: translate(-125%, 50%);
+    height: 25px !important;
+}

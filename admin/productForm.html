@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client page</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="./productForm.css">
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html" id="logo">
+            <h1>Le Furry</h1>
+            <img src="../resources/kennel.png" alt="kennel">
+        </a>
+        <div>
+            <a id="login">
+                <h4>Clayton</h4>
+                <img src='../resources/profile.png' alt='profilePic' />
+                <img src="../resources/shield.png" alt="shield" id="shield">
+            </a>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
+                            <h4>Profile</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./products.html">
+                            <img class="dropdownIcon" src="../resources/shopping.png" alt="shopping">
+                            <h4>Shop</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./users.html">
+                            <img class="dropdownIcon" src="../resources/gear.png" alt="gear">
+                            <h4>Users</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./services.html">
+                            <img class="dropdownIcon" src="../resources/tools-and-utensils.png" alt="scissors">
+                            <h4>Services</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./finance.html">
+                            <img class="dropdownIcon" src="../resources/bars.png" alt="bars">
+                            <h4>Finance</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header id="secondHeader">
+        <h1>Add Product</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <form id="productForm">
+                <div class="inputWrap col4">
+                    <span>Product name:</span>
+                    <input type="text" name="name" placeholder="Ex.: Dog food"/>
+                </div>
+                <div class="inputWrap col3">
+                    <span>Price: $</span>
+                    <input type="number" step="0.01" name="price" placeholder="20.99"/>
+                </div>
+                <div class="inputWrap col7">
+                    <span>Description:</span>
+                    <input type="text" name="description" placeholder="Describe your product"/>
+                </div>
+                <div class="inputWrap col4">
+                    <span>Tags:</span>
+                    <input type="text" name="tags" placeholder="[tag,tag,tag]"/>
+                </div>
+                <div class="inputWrap col3">
+                    <span>In stock:</span>
+                    <input type="number" name="stock"/>
+                </div>
+                <div class="inputWrap col4">
+                    <span>Product photo:</span>
+                    <input type="file" name="photo"/>
+                </div>
+                <div class="inputWrap col3">
+                    <span>Brand:</span>
+                    <input type="text" name="brand" placeholder="Ex.: Pedigree"/>
+                </div>
+                <div class="inputWrap center">
+                    <input type="submit" value="Add"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
