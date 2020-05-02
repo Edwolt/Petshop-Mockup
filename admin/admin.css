@@ -6,7 +6,13 @@
 
 .dropdown ul{
     list-style: none;
+    display: none;          
 }
+
+.dropdown-wrapper:hover ul{
+    display: inherit;            
+}
+
 
 .dropdown ul li{
     /* display: flex;
