@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client page</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./client.css">
+    <link rel="stylesheet" href="./products.css">
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html" id="logo">
+            <h1>Le Furry</h1>
+            <img src="../resources/kennel.png" alt="kennel">
+        </a>
+        <div class="dropdown-wrapper">
+            <a id="login">
+                <h4>Fulano</h4>
+                <img src='../resources/profile.png' alt='profilePic' />
+            </a>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <a href="./profile.html">
+                            <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
+                            <h4>Profile</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/shopping.png" alt="shopping">
+                            <h4>Shop</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/cart.png" alt="cart">
+                            <h4>Cart</h4>
+                            <div class="pop">3</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pets.html">
+                            <img class="dropdownIcon" src="../resources/collar.png" alt="collar">
+                            <h4>My Pets</h4>
+                            <div class="pop">2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/tools-and-utensils.png" alt="scissors">
+                            <h4>Services</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header id="secondHeader">
+        <h1>Cart</h1>
+    </header>
+    <div class="content">
+        <div>
+                <div class=" card shopping-cart">
+                    <div class="title">
+                        <h1>Shopping Bag</h1>
+                    </div>
+
+                    <!-- Product #1 -->
+                    <div class="item">
+                        <div class="btn-delete">
+                            <img src="../resources/delete.png" alt="" />
+                        </div>
+
+                        <div class="image">
+                            <img src="../resources/dog-food.jpg" alt="" />
+                        </div>
+
+                        <div class="description">
+                            <span>Dog food</span>
+                            <span>Crunch bites</span>
+                        </div>
+
+                        <div class="unit-price">
+                            <span>Unit price</span>
+                            <span>$20.99</span>
+                        </div>
+
+                        <div class="quantity">
+                            <button class="btn-plus" type="button" name="button">
+                                <img src="../resources/plus.png" alt="" />
+                            </button>
+                            <input type="text" name="name" value="1">
+                            <button class="btn-minus" type="button" name="button">
+                                <img src="../resources/minus.png" alt="" />
+                            </button>
+                        </div>
+
+                        <div class="total-price">
+                            <span>Total</span>
+                            <span>$20.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Product #2 -->
+                    <div class="item">
+                        <div class="btn-delete">
+                            <img src="../resources/delete.png" alt="" />
+                        </div>
+
+                        <div class="image">
+                            <img src="../resources/catfood.jpg" alt="" />
+                        </div>
+
+                        <div class="description">
+                            <span>Cat food</span>
+                            <span>Whiskas</span>
+                        </div>
+
+                        <div class="unit-price">
+                            <span>Unit price</span>
+                            <span>$20.99</span>
+                        </div>
+
+                        <div class="quantity">
+                            <button class="btn-plus" type="button" name="button">
+                                <img src="../resources/plus.png" alt="" />
+                            </button>
+                            <input type="text" name="name" value="2">
+                            <button class="btn-minus" type="button" name="button">
+                                <img src="../resources/minus.png" alt="" />
+                            </button>
+                        </div>
+
+                        <div class="total-price">
+                            <span>Total</span>
+                            <span>$41.98</span>
+                        </div>
+                    </div>
+
+                    <!-- Product #3 -->
+                    <div class="item">
+                        <div class="btn-delete">
+                            <img src="../resources/delete.png" alt="" />
+                        </div>
+
+                        <div class="image">
+                            <img src="../resources/coleira.jpeg" alt="" />
+                        </div>
+
+                        <div class="description">
+                            <span>Collar</span>
+                            <span>Sheffield</span>
+                        </div>
+
+                        <div class="unit-price">
+                            <span>Unit price</span>
+                            <span>$5.99</span>
+                        </div>
+
+                        <div class="quantity">
+                            <button class="btn-plus" type="button" name="button">
+                                <img src="../resources/plus.png" alt="" />
+                            </button>
+                            <input type="text" name="name" value="1">
+                            <button class="btn-minus" type="button" name="button">
+                                <img src="../resources/minus.png" alt="" />
+                            </button>
+                        </div>
+
+                        <div class="total-price">
+                            <span>Total</span>
+                            <span>$5.99</span>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="total-amount">
+                            <h2>Total amount</h2>
+                            <div id="total-cart-amount">
+                                $68.96
+                            </div>
+                        </div>
+                        <div id="btn-continue-shopping">
+                            <a>Continue shopping</a>
+                        </div>
+                        <div id="btn-pay">
+                            <a>Pay</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
