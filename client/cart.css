@@ -1,12 +1,16 @@
 .shopping-cart {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .item {
   padding: 20px 30px;
   height: 100px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .item img {
@@ -180,4 +184,40 @@ input:focus {
 #btn-continue-shopping a:hover{
   background: var(--secondarycolor);
   color: white;
+}
+
+@media (max-width: 1007px){
+  .item:nth-child(1) {
+    border:none;
+  }
+  .item:nth-child(n) {
+    border:none;
+  }
+  .item{
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 549px){
+  .item{
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 429px){
+  .item{
+    margin-bottom: 200px;
+  }
+}
+
+
+@media (max-width: 359px){
+  .btn-delete img {
+    margin-left: 30px;
+    margin-bottom: 10px; 
+  }
+
+  .item{
+    margin-bottom: 300px;
+  }
 }
