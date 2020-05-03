@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client page</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./client.css">
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./productForm.css">
 </head>
-
 <body>
     <header id="header">
         <a href="../index.html" id="logo">
@@ -24,7 +22,7 @@
             <div class="dropdown">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="./profile.html">
                             <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
                             <h4>Profile</h4>
                         </a>
@@ -43,7 +41,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./pets.html">
+                        <a href="">
                             <img class="dropdownIcon" src="../resources/collar.png" alt="collar">
                             <h4>My Pets</h4>
                             <div class="pop">2</div>
@@ -60,35 +58,56 @@
         </div>
     </header>
     <header id="secondHeader">
-        <h1>Profile</h1>
-        <a href="">Edit profile</a>
-        <a href="" style="background-color: red;color: white;">Delete profile</a>
+        <h1>Add Friend!</h1>
     </header>
     <div class="content">
         <div class="card">
-            <div id="profile-content">
-                <div class="datawrap" id="profile-pic">
-                    <img src="../resources/avatar2.png" alt="profilePic">
+            <form id="productForm">
+                <div class="inputWrap col4">
+                    <span>Pet name:</span>
+                    <input type="text" name="name" placeholder="Ex.: Rex"/>
                 </div>
-                <div class="datawrap">
-                    <h3>Name:</h3>
-                    <p>Fulano</p>
+                <div class="inputWrap col3">
+                    <span>Age:</span>
+                    <input type="number" name="age" placeholder="5"/>
                 </div>
-                <div class="datawrap">
-                    <h3>Email address:</h3>
-                    <p>fulano@email.com</p>
+                <div class="inputWrap col3">
+                    <span>Type:</span>
+                    <select name="type">
+                        <option value="" selected>Type</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                        <option value="snake">Snake</option>
+                        <option value="fish">Fish</option>
+                        <option value="rabbit">Rabbit</option>
+                        <option value="ramster">Ramster</option>
+                        <option value="other">Other...</option>
+                    </select>
                 </div>
-                <div class="datawrap">
-                    <h3>Address:</h3>
-                    <p>Florense Street, 23</p>
+                <div class="inputWrap col4">
+                    <span>Breed:</span>
+                    <input type="text" name="breed"/>
                 </div>
-                <div class="datawrap">
-                    <h3>Phone:</h3>
-                    <p>(01) 9 2345-6789</p>
+                <div class="inputWrap col4">
+                    <span>Pet photo:</span>
+                    <div class="avatar">
+                        <img src="../resources/doggy.png" alt="doggy">
+                        <img src="../resources/cat.png" alt="cat">
+                        <img src="../resources/bird.png" alt="bird">
+                        <img src="../resources/fish.png" alt="fish">
+                        <img src="../resources/upload.png" alt="upload">
+                    </div>
                 </div>
-            </div>
+                <div class="inputWrap col3">
+                    <input type="file" name="photo"/>
+                </div>
+                <div class="inputWrap col7">
+                    <input type="submit" value="Add"/>
+                </div>
+            </form>
         </div>
     </div>
-
-
-<html>
+    
+</body>
+</html>
