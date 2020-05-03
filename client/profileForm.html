@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client page</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./client.css">
+    <link rel="stylesheet" href="./productForm.css">
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html" id="logo">
+            <h1>Le Furry</h1>
+            <img src="../resources/kennel.png" alt="kennel">
+        </a>
+        <div class="dropdown-wrapper">
+            <a id="login">
+                <h4>Fulano</h4>
+                <img src='../resources/profile.png' alt='profilePic' />
+            </a>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <a href="./profile.html">
+                            <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
+                            <h4>Profile</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./products.html">
+                            <img class="dropdownIcon" src="../resources/shopping.png" alt="shopping">
+                            <h4>Shop</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/cart.png" alt="cart">
+                            <h4>Cart</h4>
+                            <div class="pop">3</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/collar.png" alt="collar">
+                            <h4>My Pets</h4>
+                            <div class="pop">2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/tools-and-utensils.png" alt="scissors">
+                            <h4>Services</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header id="secondHeader">
+        <h1>Edit profile</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <form id="productForm">
+                <div class="inputWrap col4">
+                    <span>Name:</span>
+                    <input type="text" name="name" placeholder="Ex.: Rex"/>
+                </div>
+                <div class="inputWrap col4">
+                    <span>Email:</span>
+                    <input type="text" name="email" placeholder="example@example.com"/>
+                </div>
+                <div class="inputWrap col7">
+                    <span>Address:</span>
+                    <input type="text" name="address">
+                </div>
+                <div class="inputWrap col4">
+                    <span>Phone:</span>
+                    <input type="text" name="phone" placeholder="(XX) 9 XXXX-YYYY"/>
+                </div>
+                <div class="inputWrap col4">
+                    <span>Pet photo:</span>
+                    <div class="avatar">
+                        <img src="../resources/avatar1.png" alt="avatar1">
+                        <img src="../resources/avatar2.png" alt="avatar2">
+                        <img src="../resources/avatar3.png" alt="avatar3">
+                        <img src="../resources/upload.png" alt="upload">
+                    </div>
+                </div>
+                <div class="inputWrap col3">
+                    <input type="file" name="photo"/>
+                </div>
+                <div class="inputWrap col7">
+                    <input type="submit" value="Add"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
