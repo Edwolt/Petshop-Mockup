@@ -3,6 +3,7 @@
     position: absolute;
     top: 60px;
     background: var(--secondarycolor);
+    z-index: 100000;
 }
 
 .dropdown ul{
@@ -14,9 +15,6 @@
 }
 
 .dropdown ul li{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     padding: 5px 20px;
     margin: 10px 0;
     background: var(--secondarycolor);

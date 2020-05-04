@@ -7,7 +7,7 @@
     <title>Client page</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./client.css">
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./pay.css">
 </head>
 
 <body>
@@ -60,33 +60,34 @@
         </div>
     </header>
     <header id="secondHeader">
-        <h1>Profile</h1>
-        <a href="./profileForm.html">Edit profile</a>
-        <a href="" style="background-color: red;color: white;">Delete profile</a>
+        <h1>Pay</h1>
     </header>
     <div class="content">
         <div class="card">
-            <div id="profile-content">
-                <div class="datawrap" id="profile-pic">
-                    <img src="../resources/avatar2.png" alt="profilePic">
+            <div class="credit">
+                <div id="cardFront">
+                    <div class="paying">
+                        <h3>Paying: <span>$50.98</span></h3>
+                    </div>
+                    <img src="../resources/commerce.png" alt="card" class="cardImage">
+                    <h5 class="label">Card number:</h5>
+                    <input type="text" id="name" placeholder="XXXX XXXX XXXX XXXX">
+                    <h5 class="holder-label">Card holder:</h5>
+                    <h5 class="expiration-label">Expiration:</h5>
+                    <input type="text" class="holder" placeholder="FULL NAME">
+                    <input type="text" class="month" placeholder="MM">
+                    <input type="text" class="year" placeholder="YY">
+                    <div class="cvv">
+                        <h5>CVV:</h5>
+                        <input type="text" placeholder="XXX">
+                    </div>
                 </div>
-                <div class="datawrap">
-                    <h3>Name:</h3>
-                    <p>Fulano</p>
-                </div>
-                <div class="datawrap">
-                    <h3>Email address:</h3>
-                    <p>fulano@email.com</p>
-                </div>
-                <div class="datawrap">
-                    <h3>Address:</h3>
-                    <p>Florense Street, 23</p>
-                </div>
-                <div class="datawrap">
-                    <h3>Phone:</h3>
-                    <p>(01) 9 2345-6789</p>
+                <div id="cardBack">
+                    <div class="tarjeta"></div>
+                    
                 </div>
             </div>
+            <a href="" id="pay">Pay</a>
         </div>
     </div>
 
