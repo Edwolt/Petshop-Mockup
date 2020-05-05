@@ -11,6 +11,7 @@ Eduardo Souza Rocha           NºUSP: 11218692 */
 
 .dropdown ul{
     list-style: none;
+    display: none;
 }
 
 .dropdown-wrapper:hover ul{
