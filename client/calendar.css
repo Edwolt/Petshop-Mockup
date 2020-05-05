@@ -2,15 +2,28 @@
   --calendarcolor: rgb(175, 175, 175);
 }
 
+#calendar {
+  max-width: 900px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
 #calendar table {
+  border-radius: 50px;
   border-spacing: 0px;
   border-collapse: collapse;
-  text-align: center;
 }
 
 #calendar td {
-  border: var(--calendarcolor) solid 1px;
-  padding: 10px;
+  height: 100px;
+  min-width: 150px;
+  background-color: white;
+  border: var(--calendarcolor) solid 2px;
+}
+
+#calendar .header td {
+  background-color: whitesmoke;
+  height: initial;
 }
 
 .calendar-sunday {
