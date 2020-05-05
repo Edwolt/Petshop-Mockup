@@ -67,6 +67,21 @@ input[readonly]{
     margin: 5px;
 }
 
+
+.passWrap{
+    position: relative;
+    width: 70%;
+}
+.eye{
+    position: absolute;
+    height: 32px !important;
+    left: 90%;
+    top: 7%;
+}
+.passWrap *{
+    margin-left: 0 !important;
+}
+
 @media (max-width: 750px){
     #productForm{
         display: flex;

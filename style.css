@@ -12,8 +12,31 @@
 }
 
 body{
-    
     overflow-x: hidden;
+}
+
+.heroImage{
+    position: relative;
+    background-image: url('./resources/dog.jpg');
+    background-position: 50% 40%;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    color: white;
+}
+.title{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 30%;
+}
+.title h1{
+    font-size: 68px;
+    color: blue;
+}
+.title h2{
+    margin-top: 10px;
+    font-size: 36px;
 }
 
 .content{
@@ -144,7 +167,18 @@ a:visited{
 }
 .lineWrap .wrap{
     padding: 50px;
+}
 
+@media (max-width: 800px), (max-height: 800px){
+    .title{
+        left: 10%;
+    }
+    .title h1{
+        font-size: 36px;
+    }
+    .title h2{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 500px){
@@ -155,4 +189,5 @@ a:visited{
     .card img{
         height: 200px;
     }
+
 }
