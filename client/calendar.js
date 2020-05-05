@@ -62,7 +62,8 @@ function newTable() {
    let table = document.createElement('table')
    let tbody = document.createElement('tbody')
    table.appendChild(tbody)
-   return { table, tbody }
+   
+   return { table: table, tbody: tbody }
 }
 
 function newTD(day, sunday = false) {

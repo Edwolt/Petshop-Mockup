@@ -1,3 +1,14 @@
-#calendar .sunday{
-    color: red
+#calendar table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#calendar td {
+  border: var(--secondarycolor) solid 1px;
+  padding: 10px;
+}
+
+#calendar .sunday {
+  color: red;
 }
