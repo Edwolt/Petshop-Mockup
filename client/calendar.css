@@ -1,15 +1,28 @@
+/* Leonardo Moreira Kobe    NºUSP: 9778623
+Rafael Tavares Oliveira          NºUSP: 11219071
+Eduardo Souza Rocha           NºUSP: 11218692 */
+
+.prevnext {
+  margin: 15px;
+}
+
+.prevnext button {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 #calendar * {
   --calendarcolor: rgb(175, 175, 175);
 }
 
-#calendar {
+#calendar-content {
   max-width: 900px;
   text-align: center;
   overflow-x: scroll;
+  border: rgb(150, 150, 150) solid 3px;
 }
 
 #calendar table {
-  border-radius: 50px;
   border-spacing: 0px;
   border-collapse: collapse;
 }
@@ -28,7 +41,7 @@
 }
 
 #calendar .reserved .user {
-  width: 150px;
+  width: 100px;
   height: auto;
   margin: 0;
 }
@@ -38,7 +51,12 @@
 }
 
 #calendar .reserved .pet {
-  width: 90px;
+  width: 50px;
+  height: auto;
+}
+
+#calendar .reserved .service {
+  width: 50px;
   height: auto;
 }
 
