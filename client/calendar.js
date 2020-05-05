@@ -30,20 +30,20 @@ export default class Calendar {
          if (i < start.getDay()) tr.appendChild(newTD('*'))
          else tr.appendChild(newTD(day++))
       }
-      tr.appendChild(newTD(day++), true)
+      tr.appendChild(newTD(day++, true))
       tbody.appendChild(tr)
-      
+
       // Other Weeks
       while (day <= end.getDate() - 7) {
          let tr = newTR()
          for (let i = 0; i < 6; i++) {
             tr.appendChild(newTD(day++))
          }
-         tr.appendChild(newTD(day++), true)
+         tr.appendChild(newTD(day++, true))
          tbody.appendChild(tr)
-         
+
       }
-      
+
       // Last Week
       tr = newTR()
       for (let i = 0; i < 6; i++) {
@@ -53,7 +53,7 @@ export default class Calendar {
       if (day <= end.getDate()) tr.appendChild(newTD(day++), true)
       else tr.appendChild(newTD('*'))
       tbody.appendChild(tr)
-      
+
       return table
    }
 }
@@ -68,7 +68,7 @@ function newTable() {
 function newTD(day, sunday = false) {
    let td = document.createElement('td')
    td.innerText = day
-   if (sunday) td.className = 'calendar-sunday'
+   if (sunday) td.className = 'sunday'
    return td
 }
 
