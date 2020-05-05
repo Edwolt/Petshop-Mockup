@@ -2,21 +2,57 @@
 Rafael Tavares Oliveira          NºUSP: 11219071
 Eduardo Souza Rocha           NºUSP: 11218692 */
 
+const months = [
+   'Jan',
+   'Feb',
+   'Mar',
+   'Apr',
+   'May',
+   'Jun',
+   'Jul',
+   'Sep',
+   'Oct',
+   'Nov',
+   'Dec'
+]
+
 /**
  * Location is the HTML tag where the calendar will be rendered
  */
 export default class Calendar {
    constructor(location) {
       this.location = location
-      this.location.innerHTML = ''
       this.now = new Date()
-      this.location.append(this.createCalendar())
+      this.updateCalendar()
+   }
+
+   updateCalendar() {
+      this.location.innerHTML = ''
+      this.location.appendChild(this.createHeader())
+      this.location.appendChild(this.createTable())
+   }
+
+   createHeader() {
+      const div = document.createElement('div')
+      div.className = 'calendar-header'
+      const prev = document.createElement('button')
+      const next = document.createElement('button')
+      const month = document.createElement('p')
+      prev.innerText = 'Prev'
+      next.innerText = 'Next'
+      month.innerText = months[this.now.getMonth()]
+
+      div.appendChild(prev)
+      div.appendChild(month)
+      div.appendChild(next)
+
+      return div
    }
 
    /**
     * Create a Calendar table
     */
-   createCalendar() {
+   createTable() {
       const start = new Date(this.now.getFullYear(), this.now.getMonth(), 1)
       const end = new Date(this.now.getFullYear(), this.now.getMonth() + 1, 0)
 
@@ -62,14 +98,14 @@ function newTable() {
    let table = document.createElement('table')
    let tbody = document.createElement('tbody')
    table.appendChild(tbody)
-   
+
    return { table: table, tbody: tbody }
 }
 
 function newTD(day, sunday = false) {
    let td = document.createElement('td')
    td.innerText = day
-   if (sunday) td.className = 'sunday'
+   if (sunday) td.className = 'calendar-sunday'
    return td
 }
 

@@ -1,3 +1,7 @@
+#calendar * {
+  --calendarcolor: rgb(175, 175, 175);
+}
+
 #calendar table {
   border-spacing: 0px;
   border-collapse: collapse;
@@ -5,10 +9,26 @@
 }
 
 #calendar td {
-  border: var(--secondarycolor) solid 1px;
+  border: var(--calendarcolor) solid 1px;
   padding: 10px;
 }
 
-#calendar .sunday {
+.calendar-sunday {
   color: red;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+#calendar button {
+  font-size: 15pt;
+  padding: 5px;
+  background-color: rgb(196, 196, 196);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
