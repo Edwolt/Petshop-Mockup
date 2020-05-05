@@ -2,15 +2,6 @@
 Rafael Tavares Oliveira          NºUSP: 11219071
 Eduardo Souza Rocha           NºUSP: 11218692 */
 
-.prevnext {
-  margin: 15px;
-}
-
-.prevnext button {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 #calendar * {
   --calendarcolor: rgb(175, 175, 175);
 }
@@ -64,24 +55,4 @@ Eduardo Souza Rocha           NºUSP: 11218692 */
   background-color: whitesmoke;
   border: var(--calendarcolor) solid 2px;
   height: initial;
-}
-
-.calendar-sunday {
-  color: red;
-}
-
-.calendar-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 15px;
-}
-
-#calendar button {
-  font-size: 15pt;
-  padding: 5px;
-  background-color: rgb(196, 196, 196);
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
 }
