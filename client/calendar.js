@@ -24,10 +24,7 @@ export default class Calendar {
 
       let day = 1
 
-<<<<<<< HEAD
       // First Week
-=======
->>>>>>> calendar
       let tr = newTR()
       for (let i = 0; i < 6; i++) {
          if (i < start.getDay()) tr.appendChild(newTD('*'))
@@ -35,12 +32,8 @@ export default class Calendar {
       }
       tr.appendChild(newTD(day++), true)
       tbody.appendChild(tr)
-<<<<<<< HEAD
       
       // Other Weeks
-=======
-
->>>>>>> calendar
       while (day <= end.getDate() - 7) {
          let tr = newTR()
          for (let i = 0; i < 6; i++) {
@@ -48,16 +41,10 @@ export default class Calendar {
          }
          tr.appendChild(newTD(day++), true)
          tbody.appendChild(tr)
-<<<<<<< HEAD
          
       }
       
       // Last Week
-=======
-
-      }
-
->>>>>>> calendar
       tr = newTR()
       for (let i = 0; i < 6; i++) {
          if (day <= end.getDate()) tr.appendChild(newTD(day++))
@@ -66,11 +53,7 @@ export default class Calendar {
       if (day <= end.getDate()) tr.appendChild(newTD(day++), true)
       else tr.appendChild(newTD('*'))
       tbody.appendChild(tr)
-<<<<<<< HEAD
       
-=======
-
->>>>>>> calendar
       return table
    }
 }
