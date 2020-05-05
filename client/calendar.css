@@ -21,8 +21,30 @@
   border: var(--calendarcolor) solid 2px;
 }
 
-#calendar .header td {
+#calendar .reserved {
+  background-color: lightgray;
+  display: table;
+  flex-direction: column;
+}
+
+#calendar .reserved .user {
+  width: 150px;
+  height: auto;
+  margin: 0;
+}
+
+#calendar .reserved p {
+  font-size: 17pt;
+}
+
+#calendar .reserved .pet {
+  width: 90px;
+  height: auto;
+}
+
+#calendar th {
   background-color: whitesmoke;
+  border: var(--calendarcolor) solid 2px;
   height: initial;
 }
 
