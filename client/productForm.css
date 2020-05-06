@@ -74,12 +74,17 @@ input[readonly]{
 .passWrap{
     position: relative;
     width: 70%;
+    display: flex;
+    align-items: center;
+}
+.passWrap input{
+    width: 100%;
 }
 .eye{
     position: absolute;
-    height: 32px !important;
-    left: 90%;
-    top: 7%;
+    height: 26px !important;
+    left: 85%;
+    /* top: 7%; */
 }
 .passWrap *{
     margin-left: 0 !important;
