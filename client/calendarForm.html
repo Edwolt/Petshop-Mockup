@@ -1,6 +1,7 @@
 <!-- Leonardo Moreira Kobe    NºUSP: 9778623
 Rafael Tavares Oliveira          NºUSP: 11219071
 Eduardo Souza Rocha           NºUSP: 11218692 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +10,9 @@ Eduardo Souza Rocha           NºUSP: 11218692 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client page</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./admin.css">
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./client.css">
+    <link rel="stylesheet" href="./productForm.css">
+    <link rel="stylesheet" href="./calendarForm.css">
 </head>
 
 <body>
@@ -21,14 +23,13 @@ Eduardo Souza Rocha           NºUSP: 11218692 -->
         </a>
         <div class="dropdown-wrapper">
             <a id="login">
-                <h4>Clayton</h4>
+                <h4>Fulano</h4>
                 <img src='../resources/profile.png' alt='profilePic' />
-                <img src="../resources/shield.png" alt="shield" id="shield">
             </a>
             <div class="dropdown">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="./profile.html">
                             <img class="dropdownIcon" src="../resources/business-and-finance.png" alt="prof">
                             <h4>Profile</h4>
                         </a>
@@ -40,21 +41,23 @@ Eduardo Souza Rocha           NºUSP: 11218692 -->
                         </a>
                     </li>
                     <li>
-                        <a href="./users.html">
-                            <img class="dropdownIcon" src="../resources/gear.png" alt="gear">
-                            <h4>Users</h4>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/cart.png" alt="cart">
+                            <h4>Cart</h4>
+                            <div class="pop">3</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="dropdownIcon" src="../resources/collar.png" alt="collar">
+                            <h4>My Pets</h4>
+                            <div class="pop">2</div>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img class="dropdownIcon" src="../resources/tools-and-utensils.png" alt="scissors">
                             <h4>Services</h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./finance.html">
-                            <img class="dropdownIcon" src="../resources/bars.png" alt="bars">
-                            <h4>Finance</h4>
                         </a>
                     </li>
                     <li>
@@ -68,32 +71,34 @@ Eduardo Souza Rocha           NºUSP: 11218692 -->
         </div>
     </header>
     <header id="secondHeader">
-        <h1>Profile</h1>
-        <a href="./profileForm.html">Edit profile</a>
-        <a href="" style="background-color: red;color: white;">Delete profile</a>
+        <h1>Schedule a service</h1>
     </header>
     <div class="content">
         <div class="card">
-            <div id="profile-content">
-                <div class="datawrap" id="profile-pic">
-                    <img src="../resources/avatar2.png" alt="profilePic">
-                    <img src="../resources/shield.png" alt="shield" id="big-shield">
+            <form id="productForm">
+                <div class="inputWrap col7">
+                    <span>Pet</span>
+                    <select class="pet">
+                        <option value="fish">My Fish</option>
+                        <option value="cat">My Cat</option>
+                    </select>
                 </div>
-                <div class="datawrap">
-                    <h3>Name:</h3>
-                    <p>Clayton</p>
+                <div class="inputWrap col7">
+                    <span>Service:</span>
+                    <select class="service">
+                        <option value="" selected>Type</option>
+                        <option value="shearing">Shearing</option>
+                        <option value="bath">Bath</option>
+                        <option value="vet">Vet checkup</option>
+                    </select>
                 </div>
-                <div class="datawrap">
-                    <h3>Email address:</h3>
-                    <p>clayton@lefurry.com</p>
+                <div class="inputWrap col7">
+                    <input type="submit" value="Add" />
                 </div>
-                <div class="datawrap">
-                    <h3>Phone:</h3>
-                    <p>(01) 9 2345-6789</p>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 
 </body>
-<html>
+
+</html>
